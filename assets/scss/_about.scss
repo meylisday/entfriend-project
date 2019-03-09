@@ -1,0 +1,29 @@
+.section-about {
+    .container-fluid {
+        h1 {
+            margin-bottom: 1.2em;
+        }
+        .columns {
+            .name-company {
+                text-align: right;
+                h1 {
+                    font-family: $font-family-overpass;
+                    font-weight: normal;
+                    font-size: 36px;
+                    color: #6E6E6E;
+                }
+                padding-top: 0;
+            }
+            .description-company {
+                p {
+                    font-family: $font-family-roboto;
+                    font-weight: normal;
+                    line-height: 33px;
+                    font-size: 20px;
+                    color: #000000;
+                    margin-bottom: 1.7em;
+                }
+            }
+        }
+    }
+}

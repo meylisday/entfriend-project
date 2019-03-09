@@ -1,0 +1,77 @@
+.common-title {
+    font-family: $font-family-overpass;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    color: #27282A;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-reviews {
+    height: 100%;
+    width: 100%;
+    background: url(/assets/img/pattern-backround.png) no-repeat;
+    background-size: cover;
+    .container-fluid {
+        .columns {
+            margin-top: 1em;
+            .columns {
+                .reviews-img {
+                    text-align: right;
+                }
+                .column {
+                    font-family: $font-family-overpass;
+                    color: rgba(0, 0, 0, 0.8);
+                    .reviews-title {
+                        font-weight: bold;
+                        font-size: 16px;
+                        letter-spacing: 0.05em;
+                    }
+                    .reviews-dash {
+                        margin-top: 0.5rem;
+                        margin-bottom: 0.5rem;
+                        width: 19.49px;
+                        border: 0.5px solid rgba(0, 0, 0, 0.5);
+                    }
+                    .reviews-subtitle {
+                        font-weight: normal;
+                        font-size: 14px;
+                        letter-spacing: 0.05em;
+                    }
+                    .reviews-description {
+                        font-weight: normal;
+                        line-height: 19px;
+                        font-size: 14px;
+                        color: rgba(0, 0, 0, 0.7);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.reviews-more {
+    font-family: $font-family-overpass;
+    font-weight: normal;
+    line-height: 17px;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 9px 16px 9px 16px;
+    background-color: #EFEFEF;
+}
+
+.section-reviews-button {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    a:first-child{
+        margin-right: 0.6em;
+    }
+}

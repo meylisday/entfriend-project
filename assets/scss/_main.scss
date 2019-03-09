@@ -1,0 +1,95 @@
+.section.main {
+    min-height: 518px;
+}
+
+.main {
+    background-color: $color-white;
+}
+
+.block-screen-wrapper {
+    position: absolute;
+    width: 1540px;
+    height: 672.16px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 802px;
+    background: #F6F9FE;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    &__screen {
+        background: url(/assets/img/Service_Page.png);
+        background-size: cover;
+        width: 1435px;
+        height: 648px;
+        margin: auto;
+        margin-top: 24px;
+        box-shadow: 0px 0px 30px rgba(19, 39, 72, 0.25);
+    }
+}
+
+.block-tip-wrapper {
+    position: absolute;
+    width: 475px;
+    height: 217px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 674.16px;
+    z-index: -1;
+    .block-tip {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        background: #DDF4E9;
+        border-radius: 5px;
+        p {
+            font-family: $font-family-overpass;
+            line-height: 24px;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+        }
+        p:first-child {
+            margin-bottom: 15px;
+        }
+        p:last-child {
+            margin-top: 15px;
+        }
+        &__text {
+            padding: 33px 28px 41px 25px;
+        }
+    }
+}
+
+.section-main-button {
+    margin-top: 245px;
+    margin-bottom: 17px;
+    text-align: center;
+    .main-button {
+        font-family: $font-family-overpass;
+        font-weight: 900;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        background: #27AE60;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        text-decoration: none;
+        color: $color-white;
+        display: inline-block;
+        padding: 21px 34px 14px 34px;
+    }
+}
+.section-feature{
+    background-color: #F6F9FE;
+    .container-fluid{
+        .columns{
+            text-align: center;
+        }
+    }
+}

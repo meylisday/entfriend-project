@@ -1,0 +1,63 @@
+.section .header-bg {
+  background: url(/assets/img/adult-beard-blur-927022.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  z-index: -1;
+  max-height: calc(100% - 45px); }
+  .section .header-bg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(147, 158, 176, 0.5) 0%, rgba(147, 158, 176, 0) 27.93%), linear-gradient(0deg, rgba(147, 158, 176, 0.7), rgba(147, 158, 176, 0.7)); }
+
+.header {
+  z-index: 1; }
+  .header .header-logo {
+    font-size: 36px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    color: #A4E4FF; }
+    .header .header-logo span {
+      font-weight: 800; }
+  .header .subtitle {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px; }
+
+.nav {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 14px;
+  letter-spacing: 0.1em; }
+  .nav .nav-item {
+    text-align: center;
+    color: #FFFFFF; }
+  .nav .lk-button {
+    background: #27AE60;
+    border-radius: 3px; }
+
+.header-text {
+  position: relative;
+  top: 243px;
+  font-family: "Overpass", sans-serif;
+  color: #FFFFFF; }
+  .header-text__title {
+    font-weight: normal;
+    font-size: 20px; }
+  .header-text__subtitle {
+    font-weight: bold;
+    line-height: 52px;
+    font-size: 36px; }
