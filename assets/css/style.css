@@ -8492,6 +8492,9 @@ a.navbar-item:last-child:hover {
     margin-top: 1em; }
     .section-reviews .container-fluid .columns .columns .reviews-img {
       text-align: right; }
+      @media screen and (max-width: 768px) {
+        .section-reviews .container-fluid .columns .columns .reviews-img {
+          text-align: left; } }
     .section-reviews .container-fluid .columns .columns .column {
       font-family: "Overpass", sans-serif;
       color: rgba(0, 0, 0, 0.8); }
@@ -8528,6 +8531,10 @@ a.navbar-item:last-child:hover {
 .section-reviews-button {
   margin-top: 100px;
   margin-bottom: 100px; }
+  @media screen and (max-width: 768px) {
+    .section-reviews-button {
+      margin: 10% 0 0 0;
+      padding-top: 0; } }
 
 .social-media {
   display: flex;

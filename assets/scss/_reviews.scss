@@ -19,6 +19,9 @@
             .columns {
                 .reviews-img {
                     text-align: right;
+                    @include mobile {
+                        text-align: left;
+                    }
                 }
                 .column {
                     font-family: $font-family-overpass;
@@ -66,16 +69,21 @@
 .section-reviews-button {
     margin-top: 100px;
     margin-bottom: 100px;
+    @include mobile {
+        margin: 10% 0 0 0;
+        padding-top: 0;
+
+    }
 }
 
 .social-media {
     display: flex;
     align-items: center;
-    a:first-child{
+    a:first-child {
         margin-right: 0.6em;
     }
-    a>img{
-        width:20px;
+    a>img {
+        width: 20px;
         height: 20px;
         max-width: 20px;
     }
