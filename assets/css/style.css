@@ -8647,7 +8647,8 @@ a.navbar-item:last-child:hover {
       margin-left: 1em; }
       @media screen and (max-width: 768px) {
         .section-cost .section-cost-container__block--startap {
-          margin-left: 0; } }
+          margin-left: 0;
+          margin-bottom: 10%; } }
       .section-cost .section-cost-container__block--startap-title {
         background: #F1EDA5; }
       .section-cost .section-cost-container__block--startap-cost {
