@@ -8080,7 +8080,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
       padding: 2em 1.5em; } }
 
 .section .header-bg {
-  background: url(/assets/img/adult-beard-blur-927022.jpg);
+  background: url(../img/adult-beard-blur-927022.jpg);
   position: absolute;
   top: 0;
   left: 0;
@@ -8336,7 +8336,7 @@ a.navbar-item:last-child:hover {
       width: 90%;
       height: 672.16px; } }
   .block-screen-wrapper__screen {
-    background: url(/assets/img/Service_Page.png);
+    background: url(../img/Service_Page.png);
     background-size: cover;
     width: 1435px;
     height: 648px;
@@ -8489,7 +8489,7 @@ a.navbar-item:last-child:hover {
 .section-reviews {
   height: 100%;
   width: 100%;
-  background: url(/assets/img/pattern-backround.png) no-repeat;
+  background: url(../img/pattern-backround.png) no-repeat;
   background-size: cover; }
   .section-reviews .container-fluid .columns {
     margin-top: 1em; }
@@ -8573,7 +8573,7 @@ a.navbar-item:last-child:hover {
           width: 265px;
           text-align: left;
           list-style-type: none;
-          list-style-image: url("/assets/img/correct.svg");
+          list-style-image: url("../img/correct.svg");
           font-family: "Roboto", sans-serif;
           font-weight: normal;
           line-height: 21px;
