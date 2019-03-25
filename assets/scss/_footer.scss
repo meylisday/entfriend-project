@@ -1,7 +1,23 @@
 .footer {
     background: rgba(16, 33, 61, 0.55);
     padding: 3rem 1.5rem 3rem;
-    a{
+
+    .container-fluid {
+        .columns {
+            @include mobile {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .column {
+                @include mobile {
+                    padding: 0.40rem;
+                }
+            }
+        }
+    }
+
+    a {
         text-decoration: none;
         font-family: $font-family-overpass;
         font-weight: normal;

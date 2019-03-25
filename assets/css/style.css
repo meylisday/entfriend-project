@@ -8739,6 +8739,13 @@ a.navbar-item:last-child:hover {
 .footer {
   background: rgba(16, 33, 61, 0.55);
   padding: 3rem 1.5rem 3rem; }
+  @media screen and (max-width: 768px) {
+    .footer .container-fluid .columns {
+      display: flex;
+      flex-direction: column-reverse; } }
+  @media screen and (max-width: 768px) {
+    .footer .container-fluid .columns .column {
+      padding: 0.40rem; } }
   .footer a {
     text-decoration: none;
     font-family: "Overpass", sans-serif;
