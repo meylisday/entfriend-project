@@ -3,6 +3,11 @@
     .section-cost-container {
         &__block {
             margin-top: 2em;
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             &--startap,
             &--business {
                 z-index: 999;
@@ -12,6 +17,9 @@
                 border-radius: 10px;
                 width: 22%;
                 padding: 0;
+                @include mobile {
+                    width: 90%;
+                }
                 &-title {
                     border-radius: 10px 10px 0px 0px;
                     height: 62px;
@@ -30,6 +38,9 @@
                 &-list {
                     ul {
                         padding: 1.2em 0px 1em 105px;
+                        @include mobile {
+                            padding: 1.2em 0px 1em 60px
+                        }
                         li {
                             width: 265px;
                             text-align: left;
@@ -103,6 +114,9 @@
             }
             &--startap {
                 margin-left: 1em;
+                @include mobile {
+                    margin-left: 0;
+                }
                 &-title {
                     background: #F1EDA5;
                 }
@@ -119,6 +133,9 @@
             }
             &--business {
                 margin-left: 5em;
+                @include mobile {
+                    margin-left: 0;
+                }
                 &-title {
                     background: #27AE60;
                     h1 {
@@ -144,6 +161,10 @@
             right: 0;
             top: -20px;
             z-index: 1;
+            @include mobile {
+                width: 90%;
+                height: 300px;
+            }
             .block-tip {
                 position: absolute;
                 left: 0%;

@@ -103,7 +103,7 @@
     @include mobile {
         top: 167px;
         width: 90%;
-        height: 249px;
+        height: 270px;
     }
     @include tablet {
         top: 507px;
@@ -138,9 +138,6 @@
             line-height: 24px;
             font-size: 14px;
             letter-spacing: 0.02em;
-            @include mobile {
-                font-size: 12px;
-            }
         }
         p:first-child {
             margin-bottom: 15px;
@@ -174,7 +171,7 @@
     margin-bottom: 17px;
     text-align: center;
     @include mobile {
-        margin-top: 300px;
+        padding-top: 30%;
     }
     @include tablet {
         margin-top: 230px;

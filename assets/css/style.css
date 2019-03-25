@@ -8379,7 +8379,7 @@ a.navbar-item:last-child:hover {
     .block-tip-wrapper {
       top: 167px;
       width: 90%;
-      height: 249px; } }
+      height: 270px; } }
   @media screen and (min-width: 769px), print {
     .block-tip-wrapper {
       top: 507px;
@@ -8413,9 +8413,6 @@ a.navbar-item:last-child:hover {
       line-height: 24px;
       font-size: 14px;
       letter-spacing: 0.02em; }
-      @media screen and (max-width: 768px) {
-        .block-tip-wrapper .block-tip p {
-          font-size: 12px; } }
     .block-tip-wrapper .block-tip p:first-child {
       margin-bottom: 15px; }
     .block-tip-wrapper .block-tip p:last-child {
@@ -8444,7 +8441,7 @@ a.navbar-item:last-child:hover {
   text-align: center; }
   @media screen and (max-width: 768px) {
     .section-main-button {
-      margin-top: 300px; } }
+      padding-top: 30%; } }
   @media screen and (min-width: 769px), print {
     .section-main-button {
       margin-top: 230px; } }
@@ -8546,6 +8543,11 @@ a.navbar-item:last-child:hover {
   background-color: #F6F9FE; }
   .section-cost .section-cost-container__block {
     margin-top: 2em; }
+    @media screen and (max-width: 768px) {
+      .section-cost .section-cost-container__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
     .section-cost .section-cost-container__block--startap, .section-cost .section-cost-container__block--business {
       z-index: 999;
       text-align: center;
@@ -8554,6 +8556,9 @@ a.navbar-item:last-child:hover {
       border-radius: 10px;
       width: 22%;
       padding: 0; }
+      @media screen and (max-width: 768px) {
+        .section-cost .section-cost-container__block--startap, .section-cost .section-cost-container__block--business {
+          width: 90%; } }
       .section-cost .section-cost-container__block--startap-title, .section-cost .section-cost-container__block--business-title {
         border-radius: 10px 10px 0px 0px;
         height: 62px;
@@ -8569,6 +8574,9 @@ a.navbar-item:last-child:hover {
           text-transform: uppercase; }
       .section-cost .section-cost-container__block--startap-list ul, .section-cost .section-cost-container__block--business-list ul {
         padding: 1.2em 0px 1em 105px; }
+        @media screen and (max-width: 768px) {
+          .section-cost .section-cost-container__block--startap-list ul, .section-cost .section-cost-container__block--business-list ul {
+            padding: 1.2em 0px 1em 60px; } }
         .section-cost .section-cost-container__block--startap-list ul li, .section-cost .section-cost-container__block--business-list ul li {
           width: 265px;
           text-align: left;
@@ -8630,6 +8638,9 @@ a.navbar-item:last-child:hover {
           margin-left: 0.5rem; }
     .section-cost .section-cost-container__block--startap {
       margin-left: 1em; }
+      @media screen and (max-width: 768px) {
+        .section-cost .section-cost-container__block--startap {
+          margin-left: 0; } }
       .section-cost .section-cost-container__block--startap-title {
         background: #F1EDA5; }
       .section-cost .section-cost-container__block--startap-cost {
@@ -8641,6 +8652,9 @@ a.navbar-item:last-child:hover {
           color: #666666; }
     .section-cost .section-cost-container__block--business {
       margin-left: 5em; }
+      @media screen and (max-width: 768px) {
+        .section-cost .section-cost-container__block--business {
+          margin-left: 0; } }
       .section-cost .section-cost-container__block--business-title {
         background: #27AE60; }
         .section-cost .section-cost-container__block--business-title h1 {
@@ -8660,6 +8674,10 @@ a.navbar-item:last-child:hover {
     right: 0;
     top: -20px;
     z-index: 1; }
+    @media screen and (max-width: 768px) {
+      .section-cost .section-cost-container .block-tip-wrapper {
+        width: 90%;
+        height: 300px; } }
     .section-cost .section-cost-container .block-tip-wrapper .block-tip {
       position: absolute;
       left: 0%;
