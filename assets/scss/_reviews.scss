@@ -74,4 +74,9 @@
     a:first-child{
         margin-right: 0.6em;
     }
+    a>img{
+        width:20px;
+        height: 20px;
+        max-width: 20px;
+    }
 }

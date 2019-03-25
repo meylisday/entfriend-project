@@ -6,11 +6,18 @@
         .columns {
             .name-company {
                 text-align: right;
+                @include mobile {
+                    text-align: left;
+                }
                 h1 {
                     font-family: $font-family-overpass;
                     font-weight: normal;
                     font-size: 36px;
                     color: #6E6E6E;
+                    @include mobile {
+                        margin-bottom: 0;
+                        font-size: 28px;
+                    }
                 }
                 padding-top: 0;
             }
@@ -22,6 +29,9 @@
                     font-size: 20px;
                     color: #000000;
                     margin-bottom: 1.7em;
+                    @include mobile {
+                        font-size: 16px;
+                    }
                 }
             }
         }

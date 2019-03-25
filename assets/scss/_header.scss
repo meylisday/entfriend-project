@@ -1,6 +1,10 @@
 .section.header {
     min-height: 700px;
     height: 100vh;
+    @include mobile {
+        min-height: 400px;
+        padding: 2em 1.5em;
+    }
 }
 
 .section {
@@ -16,6 +20,9 @@
         background-position: 50% 25%;
         z-index: -1;
         max-height: calc(100% - 45px);
+        @include mobile {
+            background-position: 67% 66%;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -37,6 +44,9 @@
         font-family: $font-family-overpass;
         font-weight: 400;
         color: #A4E4FF;
+        @include mobile {
+            font-size: 26px;
+        }
         span {
             font-weight: 800;
         }
@@ -45,43 +55,190 @@
         color: $color-white;
         font-family: $font-family-roboto;
         font-size: 20px;
+        @include mobile {
+            font-size: 14px;
+        }
     }
 }
 
-.nav {
+.navbar {
+    background: transparent;
     font-family: $font-family-roboto;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     font-size: 14px;
     letter-spacing: 0.1em;
-    .nav-item {
-        text-align: center;
-        color: $color-white;
-        padding-left: 0.1rem;
-        padding-right: 0.1rem;
+}
+
+a.navbar-item:hover {
+    background: inherit;
+    color: $color-white;
+}
+
+a.navbar-item:last-child:hover {
+    background: #27AE60;
+    color: $color-white;
+}
+
+.navbar-item {
+    color: $color-white;
+    margin-right: 59px;
+    @include mobile {
+        padding: 0;
+        margin-right: 0;
+        font-size: 1em;
     }
-    .nav-item:last-child {
-        background: #27AE60;
-        border-radius: 3px;
-        a {
-            color: $color-white
-        }
+    @include tablet {
+        margin-right: 0;
+    }
+    @include desktop {
+        margin-right: 0;
+    }
+    @include widescreen {
+        margin-right: 59px;
+    }
+    @include fullhd {
+        margin-right: 59px;
     }
 }
 
+.navbar-item:last-child {
+    background: #27AE60;
+    border-radius: 3px;
+    padding: 9px 13px 9px 13px;
+    margin-right: 0;
+    a {
+        color: $color-white
+    }
+}
+
+.lk-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-brand {}
+
+// .nav {
+//     font-family: $font-family-roboto;
+//     font-style: normal;
+//     font-weight: 500;
+//     line-height: normal;
+//     font-size: 14px;
+//     letter-spacing: 0.1em;
+//     .nav-item {
+//         text-align: center;
+//         color: $color-white;
+//         padding-left: 0.1rem;
+//         padding-right: 0.1rem;
+//     }
+//     .nav-item:last-child {
+//         background: #27AE60;
+//         border-radius: 3px;
+//         a {
+//             color: $color-white
+//         }
+//     }
+// }
 .header-text {
     position: relative;
     top: 243px;
     font-family: $font-family-overpass;
     color: $color-white;
+    @include mobile {
+        top: 40px;
+    }
+    @include tablet {
+        top: 150px;
+    }
+    @include desktop {
+        top: 200px;
+    }
+    @include widescreen {
+        top: 220px;
+    }
+    @include fullhd {
+        top: 240px;
+    }
     &__title {
         font-weight: normal;
         font-size: 20px;
+        @include mobile {
+            font-size: 18px;
+        }
     }
     &__subtitle {
         font-weight: bold;
         line-height: 52px;
         font-size: 36px;
+        @include mobile {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        @include tablet {
+            font-size: 36px;
+        }
+        @include desktop {
+            font-size: 36px;
+        }
+        @include widescreen {
+            font-size: 36px;
+        }
+        @include fullhd {
+            font-size: 36px;
+        }
+    }
+}
+
+.is-adaptive {
+    @include mobile {
+        width: 81.3333% !important;
+    }
+    @include tablet {
+        width: 47.3333% !important;
+    }
+    @include desktop {
+        width: 33.3333% !important;
+    }
+    @include widescreen {
+        width: 33.3333% !important;
+    }
+    @include fullhd {
+        width: 33.3333% !important;
+    }
+}
+
+.is-mobile {
+    @include mobile {
+        display: none;
+    }
+}
+
+.navbar>.container .navbar-brand,
+.container>.navbar .navbar-brand {
+    @include tablet {
+        margin-left: -0.75rem;
+    }
+    @include desktop {
+        margin-left: 2.25rem;
+    }
+    @include widescreen {
+        margin-left: -0.75rem;
+    }
+    @include fullhd {
+        margin-left: -6.75rem;
+    }
+}
+
+.navbar-menu {
+    @include mobile {
+        background: transparent;
+        text-align: center
+    }
+    @include tablet {
+        background: transparent;
+        text-align: center;
     }
 }
