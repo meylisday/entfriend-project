@@ -8548,7 +8548,9 @@ a.navbar-item:last-child:hover {
 .section-cost {
   background-color: #F6F9FE; }
   .section-cost .section-cost-container__block {
-    margin-top: 2em; }
+    margin-top: 2em;
+    display: flex;
+    justify-content: center; }
     @media screen and (max-width: 768px) {
       .section-cost .section-cost-container__block {
         display: flex;
