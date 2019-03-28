@@ -8075,7 +8075,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   height: 1000px; }
   @media screen and (max-width: 768px) {
     .section.header {
-      height: 600px;
+      height: 500px;
       padding: 2em 1.5em; } }
 
 .section .header-bg {
@@ -8092,7 +8092,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   height: 1000px; }
   @media screen and (max-width: 768px) {
     .section .header-bg {
-      height: 600px;
+      height: 500px;
       background-position: 67% 66%; } }
   .section .header-bg:before {
     content: '';
@@ -8318,7 +8318,7 @@ a.navbar-item:last-child:hover {
   @media screen and (max-width: 768px) {
     .block-screen-wrapper {
       width: 90%;
-      top: 570px;
+      top: 467px;
       height: 165.16px; } }
   @media screen and (min-width: 769px), print {
     .block-screen-wrapper {

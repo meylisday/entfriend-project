@@ -1,7 +1,7 @@
 .section.header {
     height: 1000px;
     @include mobile {
-        height: 600px;
+        height: 500px;
         padding: 2em 1.5em;
     }
 }
@@ -20,7 +20,7 @@
         z-index: -1;
         height: 1000px;
         @include mobile {
-            height: 600px;
+            height: 500px;
             background-position: 67% 66%;
         }
         &:before {
