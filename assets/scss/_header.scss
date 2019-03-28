@@ -1,8 +1,7 @@
 .section.header {
-    min-height: 700px;
-    height: 100vh;
+    height: 1000px;
     @include mobile {
-        min-height: 400px;
+        height: 600px;
         padding: 2em 1.5em;
     }
 }
@@ -19,8 +18,9 @@
         background-repeat: no-repeat;
         background-position: 50% 25%;
         z-index: -1;
-        max-height: calc(100% - 45px);
+        height: 1000px;
         @include mobile {
+            height: 600px;
             background-position: 67% 66%;
         }
         &:before {

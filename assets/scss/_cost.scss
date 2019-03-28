@@ -1,13 +1,17 @@
 .section-cost {
     background-color: #F6F9FE;
+
     .section-cost-container {
         &__block {
             margin-top: 2em;
+
             @include mobile {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
             }
+
             &--startap,
             &--business {
                 z-index: 999;
@@ -15,17 +19,20 @@
                 background: $color-white;
                 box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
                 border-radius: 10px;
-                width: 22%;
+                width: 414px;
                 padding: 0;
+
                 @include mobile {
                     width: 90%;
                 }
+
                 &-title {
                     border-radius: 10px 10px 0px 0px;
                     height: 62px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
                     h1 {
                         font-family: $font-family-roboto;
                         font-weight: bold;
@@ -35,12 +42,15 @@
                         text-transform: uppercase;
                     }
                 }
+
                 &-list {
                     ul {
                         padding: 1.2em 0px 1em 105px;
+
                         @include mobile {
                             padding: 1.2em 0px 1em 60px
                         }
+
                         li {
                             width: 265px;
                             text-align: left;
@@ -54,19 +64,27 @@
                         }
                     }
                 }
+
                 &-cost {
                     font-family: $font-family-roboto;
                     text-align: center;
+
                     h1 {
                         font-weight: bold;
-                        line-height: 67px;
+                        line-height: 1;
                         font-size: 64px;
                         color: rgba(0, 0, 0, 0.8);
+
+                        span {
+                            font-size: 18px;
+                        }
                     }
+
                     p {
                         line-height: 19px;
                         font-size: 18px;
                         color: rgba(0, 0, 0, 0.6);
+
                         span {
                             font-weight: normal;
                             line-height: 15px;
@@ -75,6 +93,7 @@
                         }
                     }
                 }
+
                 &-button {
                     border-radius: 3px;
                     margin-right: 90px;
@@ -83,6 +102,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
                     a {
                         text-decoration: none;
                         font-family: $font-family-roboto;
@@ -95,12 +115,13 @@
                         text-transform: uppercase;
                     }
                 }
+
                 &-nocard {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     margin-top: 18px;
-                    margin-bottom: 23px;
+                    margin-bottom: 14px;
                     span {
                         font-family: $font-family-roboto;
                         font-weight: normal;
@@ -112,46 +133,78 @@
                     }
                 }
             }
+
             &--startap {
                 margin-left: 1em;
+
                 @include mobile {
                     margin-left: 0;
                     margin-bottom: 10%;
                 }
+
                 &-title {
                     background: #F1EDA5;
                 }
+
                 &-cost {
                     margin-top: 2.7em;
                 }
+
                 &-button {
                     background: #F0EDA5;
-                    margin-top: 0.9em;
+                    margin-top: 2.2em;
                     a {
                         color: #666666;
                     }
                 }
+
+                &-ad {
+                    padding-top: .3rem;
+                    span {
+                        font-family: $font-family-roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #000000;
+                    }
+                }
             }
+
             &--business {
                 margin-left: 5em;
+
                 @include mobile {
                     margin-left: 0;
                 }
+
                 &-title {
                     background: #27AE60;
+
                     h1 {
                         color: $color-white;
                     }
                 }
+
+                &-cost {
+                    margin-top: 22px;
+                }
+
                 &-button {
                     background: #27AE60;
-                    margin-top: 2.2em;
+                    margin-top: 2.25em;
+
                     a {
                         color: $color-white;
                     }
                 }
+                &-nocard {
+                    margin-top: 46px;
+
+                }
             }
         }
+
         .block-tip-wrapper {
             position: relative;
             width: 475px;
@@ -162,10 +215,12 @@
             right: 0;
             top: -20px;
             z-index: 1;
+
             @include mobile {
                 width: 90%;
                 height: 300px;
             }
+
             .block-tip {
                 position: absolute;
                 left: 0%;
@@ -174,18 +229,22 @@
                 bottom: 0%;
                 background: #DDF4E9;
                 border-radius: 5px;
+
                 p {
                     font-family: $font-family-overpass;
                     line-height: 24px;
                     font-size: 14px;
                     letter-spacing: 0.02em;
                 }
+
                 p:first-child {
                     margin-bottom: 15px;
                 }
+
                 p:last-child {
                     margin-top: 15px;
                 }
+
                 &__text {
                     padding: 33px 28px 41px 25px;
                 }
