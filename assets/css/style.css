@@ -8511,15 +8511,24 @@ a.navbar-item:last-child:hover {
         margin-bottom: 0.5rem;
         width: 19.49px;
         border: 0.5px solid rgba(0, 0, 0, 0.5); }
+        @media screen and (max-width: 768px) {
+          .section-reviews .container-fluid .columns .columns .column .reviews-dash {
+            margin: 0 auto; } }
       .section-reviews .container-fluid .columns .columns .column .reviews-subtitle {
         font-weight: normal;
         font-size: 14px;
         letter-spacing: 0.05em; }
+        @media screen and (max-width: 768px) {
+          .section-reviews .container-fluid .columns .columns .column .reviews-subtitle {
+            margin-bottom: .3rem; } }
       .section-reviews .container-fluid .columns .columns .column .reviews-description {
         font-weight: normal;
         line-height: 19px;
         font-size: 14px;
         color: rgba(0, 0, 0, 0.7); }
+        @media screen and (max-width: 768px) {
+          .section-reviews .container-fluid .columns .columns .column .reviews-description {
+            margin-top: .5rem; } }
 
 .reviews-more {
   font-family: "Overpass", sans-serif;
@@ -8549,6 +8558,17 @@ a.navbar-item:last-child:hover {
     width: 20px;
     height: 20px;
     max-width: 20px; }
+  @media screen and (max-width: 768px) {
+    .social-media {
+      display: flex;
+      justify-content: center; } }
+
+@media screen and (max-width: 768px) {
+  .is-mobile-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; } }
 
 .section-cost {
   background-color: #F6F9FE; }
