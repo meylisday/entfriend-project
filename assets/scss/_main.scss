@@ -1,5 +1,6 @@
 .section.main {
     min-height: 518px;
+    background-image: url(../img/background-pattern-main.jpg);
     @include mobile {
         min-height: 100px;
     }
@@ -19,6 +20,10 @@
 
 .main {
     background-color: $color-white;
+}
+.section.offer-main{
+    background-image: url(../img/background-pattern-main.jpg);
+    z-index: -999; 
 }
 
 .block-screen-wrapper {
@@ -98,7 +103,7 @@
     left: 0;
     right: 0;
     top: 674.16px;
-    z-index: -1;
+    z-index: 0;
     @include mobile {
         top: 167px;
         width: 90%;
@@ -202,7 +207,7 @@
 }
 
 .section-feature {
-    background-color: #F6F9FE;
+    background-color:#EBEFF5;
     .container-fluid {
         .columns {
             text-align: center;

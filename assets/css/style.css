@@ -8278,7 +8278,8 @@ a.navbar-item:last-child:hover {
     text-align: center; } }
 
 .section.main {
-  min-height: 518px; }
+  min-height: 518px;
+  background-image: url(../img/background-pattern-main.jpg); }
   @media screen and (max-width: 768px) {
     .section.main {
       min-height: 100px; } }
@@ -8297,6 +8298,10 @@ a.navbar-item:last-child:hover {
 
 .main {
   background-color: #FFFFFF; }
+
+.section.offer-main {
+  background-image: url(../img/background-pattern-main.jpg);
+  z-index: -999; }
 
 .block-screen-wrapper {
   position: absolute;
@@ -8373,7 +8378,7 @@ a.navbar-item:last-child:hover {
   left: 0;
   right: 0;
   top: 674.16px;
-  z-index: -1; }
+  z-index: 0; }
   @media screen and (max-width: 768px) {
     .block-tip-wrapper {
       top: 167px;
@@ -8469,7 +8474,7 @@ a.navbar-item:last-child:hover {
     padding: 21px 34px 14px 34px; }
 
 .section-feature {
-  background-color: #F6F9FE; }
+  background-color: #EBEFF5; }
   .section-feature .container-fluid .columns {
     text-align: center; }
 
