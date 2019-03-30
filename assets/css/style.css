@@ -8665,7 +8665,7 @@ a.navbar-item:last-child:hover {
           @media screen and (max-width: 768px) {
             .section-cost .section-cost-container__block--startap-button a, .section-cost .section-cost-container__block--business-button a {
               font-size: 14px;
-              padding: 5px 5px 5px 5px; } }
+              padding: 5px 8px 5px 8px; } }
       .section-cost .section-cost-container__block--startap-nocard, .section-cost .section-cost-container__block--business-nocard {
         display: flex;
         justify-content: center;
