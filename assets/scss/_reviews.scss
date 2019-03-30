@@ -6,13 +6,18 @@
     color: #27282A;
     text-align: center;
     margin-top: 30px;
+    @include mobile {
+        margin-top: 0;
+    }
 }
 
 .section-reviews {
     height: 100%;
     width: 100%;
-    background: url(../img/pattern-backround.png) no-repeat;
     background-size: cover;
+    @include mobile {
+        padding: 2rem 1.5rem;
+    }
     .container-fluid {
         .columns {
             margin-top: 1em;

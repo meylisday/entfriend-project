@@ -1,26 +1,37 @@
 .section-about {
+    @include mobile {
+        padding: 1.5rem 1.5rem;
+    }
+
     .container-fluid {
         h1 {
             margin-bottom: 1.2em;
         }
+
         .columns {
             .name-company {
                 text-align: right;
+
                 @include mobile {
                     text-align: left;
                 }
+
                 h1 {
                     font-family: $font-family-overpass;
                     font-weight: normal;
                     font-size: 36px;
                     color: #6E6E6E;
+
                     @include mobile {
                         margin-bottom: 0;
                         font-size: 28px;
+                        text-align: center;
                     }
                 }
+
                 padding-top: 0;
             }
+
             .description-company {
                 p {
                     font-family: $font-family-roboto;
@@ -29,8 +40,20 @@
                     font-size: 20px;
                     color: #000000;
                     margin-bottom: 1.7em;
+
                     @include mobile {
                         font-size: 16px;
+                    }
+
+                    .is-mobile-hidden {
+                        @include mobile {
+                            display: none;
+                        }
+                    }
+                    &:last-child{
+                        @include mobile {
+                            margin-bottom: 0;
+                        } 
                     }
                 }
             }

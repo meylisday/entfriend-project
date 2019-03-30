@@ -1,6 +1,10 @@
 .section-cost {
     background-color: #F6F9FE;
 
+    @include mobile {
+        padding: 2rem 1.5rem;
+    }
+
     .section-cost-container {
         &__block {
             margin-top: 2em;
@@ -100,11 +104,10 @@
                     border-radius: 3px;
                     margin-right: 90px;
                     margin-left: 90px;
-                    height: 46px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
+                    @include mobile {
+                        margin-right: 70px;
+                        margin-left: 70px;
+                    }
                     a {
                         text-decoration: none;
                         font-family: $font-family-roboto;
@@ -115,6 +118,12 @@
                         text-align: center;
                         letter-spacing: 0.03em;
                         text-transform: uppercase;
+                        display: inline-block;
+                        padding: 15px 12px 15px 12px;
+                        @include mobile {
+                            font-size: 14px;
+                            padding: 5px 5px 5px 5px;
+                        }
                     }
                 }
 
@@ -124,6 +133,7 @@
                     align-items: center;
                     margin-top: 18px;
                     margin-bottom: 14px;
+
                     span {
                         font-family: $font-family-roboto;
                         font-weight: normal;
@@ -155,6 +165,7 @@
                 &-button {
                     background: #F0EDA5;
                     margin-top: 2.2em;
+
                     a {
                         color: #666666;
                     }
@@ -162,6 +173,7 @@
 
                 &-ad {
                     padding-top: .3rem;
+
                     span {
                         font-family: $font-family-roboto;
                         font-style: normal;
@@ -200,6 +212,7 @@
                         color: $color-white;
                     }
                 }
+
                 &-nocard {
                     margin-top: 46px;
 

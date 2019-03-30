@@ -8072,7 +8072,8 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   box-shadow: none !important; }
 
 .section.header {
-  height: 1000px; }
+  height: 900px;
+  padding: 1rem 1.5rem; }
   @media screen and (max-width: 768px) {
     .section.header {
       height: 500px;
@@ -8225,7 +8226,8 @@ a.navbar-item:last-child:hover {
 
 @media screen and (max-width: 768px) {
   .is-adaptive {
-    width: 81.3333% !important; } }
+    width: 81.3333% !important;
+    margin-top: 14px; } }
 
 @media screen and (min-width: 769px), print {
   .is-adaptive {
@@ -8300,8 +8302,7 @@ a.navbar-item:last-child:hover {
   background-color: #FFFFFF; }
 
 .section.offer-main {
-  background-image: url(../img/background-pattern-main.jpg);
-  z-index: -999; }
+  background-image: url(../img/background-pattern-main.jpg); }
 
 .block-screen-wrapper {
   position: absolute;
@@ -8314,12 +8315,13 @@ a.navbar-item:last-child:hover {
   top: 802px;
   background: #ffffff;
   box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; }
+  border-radius: 10px;
+  z-index: 2; }
   @media screen and (max-width: 768px) {
     .block-screen-wrapper {
       width: 90%;
       top: 467px;
-      height: 165.16px; } }
+      height: 205px; } }
   @media screen and (min-width: 769px), print {
     .block-screen-wrapper {
       top: 90%;
@@ -8350,7 +8352,7 @@ a.navbar-item:last-child:hover {
     @media screen and (max-width: 768px) {
       .block-screen-wrapper__screen {
         width: 98%;
-        height: 155px;
+        height: 194px;
         margin-top: 10px; } }
     @media screen and (min-width: 769px), print {
       .block-screen-wrapper__screen {
@@ -8366,42 +8368,42 @@ a.navbar-item:last-child:hover {
         height: 551px; } }
     @media screen and (min-width: 1472px) {
       .block-screen-wrapper__screen {
-        width: 1435px;
+        width: 100%;
         height: 648px; } }
 
 .block-tip-wrapper {
-  position: absolute;
+  position: relative;
   width: 475px;
   height: 217px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 674.16px;
-  z-index: 0; }
+  top: 416px;
+  z-index: 1; }
   @media screen and (max-width: 768px) {
     .block-tip-wrapper {
-      top: 167px;
-      width: 90%;
-      height: 270px; } }
+      top: 110px;
+      width: 89%;
+      height: 300px; } }
   @media screen and (min-width: 769px), print {
     .block-tip-wrapper {
-      top: 507px;
+      top: 405px;
       width: 475px;
       height: 217px; } }
   @media screen and (min-width: 1088px) {
     .block-tip-wrapper {
-      top: 507px;
+      top: 405px;
       width: 475px;
       height: 217px; } }
   @media screen and (min-width: 1280px) {
     .block-tip-wrapper {
-      top: 577px;
+      top: 417px;
       width: 475px;
       height: 217px; } }
   @media screen and (min-width: 1472px) {
     .block-tip-wrapper {
-      top: 675px;
+      top: 513px;
       width: 475px;
       height: 217px; } }
   .block-tip-wrapper .block-tip {
@@ -8423,41 +8425,26 @@ a.navbar-item:last-child:hover {
       margin-top: 15px; }
     .block-tip-wrapper .block-tip__text {
       padding: 33px 28px 41px 25px; }
-      @media screen and (max-width: 768px) {
-        .block-tip-wrapper .block-tip__text {
-          padding: 10px 28px 41px 25px; } }
-      @media screen and (min-width: 769px), print {
-        .block-tip-wrapper .block-tip__text {
-          padding: 33px 28px 41px 25px; } }
-      @media screen and (min-width: 1088px) {
-        .block-tip-wrapper .block-tip__text {
-          padding: 33px 28px 41px 25px; } }
-      @media screen and (min-width: 1280px) {
-        .block-tip-wrapper .block-tip__text {
-          padding: 33px 28px 41px 25px; } }
-      @media screen and (min-width: 1472px) {
-        .block-tip-wrapper .block-tip__text {
-          padding: 33px 28px 41px 25px; } }
 
 .section-main-button {
-  margin-top: 245px;
+  margin-top: 703px;
   margin-bottom: 17px;
   text-align: center; }
   @media screen and (max-width: 768px) {
     .section-main-button {
-      padding-top: 30%; } }
+      margin-top: 143px; } }
   @media screen and (min-width: 769px), print {
     .section-main-button {
-      margin-top: 230px; } }
+      margin-top: 438px; } }
   @media screen and (min-width: 1088px) {
     .section-main-button {
-      margin-top: 230px; } }
+      margin-top: 438px; } }
   @media screen and (min-width: 1280px) {
     .section-main-button {
-      margin-top: 240px; } }
+      margin-top: 454px; } }
   @media screen and (min-width: 1472px) {
     .section-main-button {
-      margin-top: 245px; } }
+      margin-top: 545px; } }
   .section-main-button .main-button {
     font-family: "Overpass", sans-serif;
     font-weight: 900;
@@ -8472,9 +8459,16 @@ a.navbar-item:last-child:hover {
     color: #FFFFFF;
     display: inline-block;
     padding: 21px 34px 14px 34px; }
+    @media screen and (max-width: 768px) {
+      .section-main-button .main-button {
+        font-size: 16px;
+        padding: 11px 17px 11px 17px; } }
 
 .section-feature {
   background-color: #EBEFF5; }
+  @media screen and (max-width: 768px) {
+    .section-feature {
+      padding: 1rem 1.5rem; } }
   .section-feature .container-fluid .columns {
     text-align: center; }
 
@@ -8486,12 +8480,17 @@ a.navbar-item:last-child:hover {
   color: #27282A;
   text-align: center;
   margin-top: 30px; }
+  @media screen and (max-width: 768px) {
+    .common-title {
+      margin-top: 0; } }
 
 .section-reviews {
   height: 100%;
   width: 100%;
-  background: url(../img/pattern-backround.png) no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 768px) {
+    .section-reviews {
+      padding: 2rem 1.5rem; } }
   .section-reviews .container-fluid .columns {
     margin-top: 1em; }
     .section-reviews .container-fluid .columns .columns .reviews-img {
@@ -8572,6 +8571,9 @@ a.navbar-item:last-child:hover {
 
 .section-cost {
   background-color: #F6F9FE; }
+  @media screen and (max-width: 768px) {
+    .section-cost {
+      padding: 2rem 1.5rem; } }
   .section-cost .section-cost-container__block {
     margin-top: 2em;
     display: flex;
@@ -8643,11 +8645,11 @@ a.navbar-item:last-child:hover {
       .section-cost .section-cost-container__block--startap-button, .section-cost .section-cost-container__block--business-button {
         border-radius: 3px;
         margin-right: 90px;
-        margin-left: 90px;
-        height: 46px;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
+        margin-left: 90px; }
+        @media screen and (max-width: 768px) {
+          .section-cost .section-cost-container__block--startap-button, .section-cost .section-cost-container__block--business-button {
+            margin-right: 70px;
+            margin-left: 70px; } }
         .section-cost .section-cost-container__block--startap-button a, .section-cost .section-cost-container__block--business-button a {
           text-decoration: none;
           font-family: "Roboto", sans-serif;
@@ -8657,7 +8659,13 @@ a.navbar-item:last-child:hover {
           font-size: 16px;
           text-align: center;
           letter-spacing: 0.03em;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          display: inline-block;
+          padding: 15px 12px 15px 12px; }
+          @media screen and (max-width: 768px) {
+            .section-cost .section-cost-container__block--startap-button a, .section-cost .section-cost-container__block--business-button a {
+              font-size: 14px;
+              padding: 5px 5px 5px 5px; } }
       .section-cost .section-cost-container__block--startap-nocard, .section-cost .section-cost-container__block--business-nocard {
         display: flex;
         justify-content: center;
@@ -8748,6 +8756,10 @@ a.navbar-item:last-child:hover {
       .section-cost .section-cost-container .block-tip-wrapper .block-tip__text {
         padding: 33px 28px 41px 25px; }
 
+@media screen and (max-width: 768px) {
+  .section-about {
+    padding: 1.5rem 1.5rem; } }
+
 .section-about .container-fluid h1 {
   margin-bottom: 1.2em; }
 
@@ -8765,7 +8777,8 @@ a.navbar-item:last-child:hover {
     @media screen and (max-width: 768px) {
       .section-about .container-fluid .columns .name-company h1 {
         margin-bottom: 0;
-        font-size: 28px; } }
+        font-size: 28px;
+        text-align: center; } }
 
 .section-about .container-fluid .columns .description-company p {
   font-family: "Roboto", sans-serif;
@@ -8777,6 +8790,12 @@ a.navbar-item:last-child:hover {
   @media screen and (max-width: 768px) {
     .section-about .container-fluid .columns .description-company p {
       font-size: 16px; } }
+  @media screen and (max-width: 768px) {
+    .section-about .container-fluid .columns .description-company p .is-mobile-hidden {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    .section-about .container-fluid .columns .description-company p:last-child {
+      margin-bottom: 0; } }
 
 .footer {
   background: rgba(16, 33, 61, 0.55);

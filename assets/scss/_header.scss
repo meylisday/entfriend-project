@@ -1,5 +1,6 @@
 .section.header {
-    height: 1000px;
+    height: 900px;
+    padding: 1rem 1.5rem;
     @include mobile {
         height: 500px;
         padding: 2em 1.5em;
@@ -195,6 +196,7 @@ a.navbar-item:last-child:hover {
 .is-adaptive {
     @include mobile {
         width: 81.3333% !important;
+        margin-top: 14px;
     }
     @include tablet {
         width: 47.3333% !important;
