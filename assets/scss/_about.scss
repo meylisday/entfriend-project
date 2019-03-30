@@ -50,10 +50,11 @@
                             display: none;
                         }
                     }
-                    &:last-child{
+
+                    &:last-child {
                         @include mobile {
                             margin-bottom: 0;
-                        } 
+                        }
                     }
                 }
             }

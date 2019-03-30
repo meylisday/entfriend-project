@@ -1,18 +1,24 @@
 .section.main {
     min-height: 518px;
     background-image: url(../img/background-pattern-main.jpg);
+
     @include mobile {
         min-height: 100px;
     }
+
     @include tablet {
         min-height: 387px;
     }
+
     @include desktop {
-        min-height: 390px;;
+        min-height: 390px;
+        ;
     }
+
     @include widescreen {
         min-height: 380px
     }
+
     @include fullhd {
         min-height: 474px;
     }
@@ -21,9 +27,9 @@
 .main {
     background-color: $color-white;
 }
-.section.offer-main{
+
+.section.offer-main {
     background-image: url(../img/background-pattern-main.jpg);
-    // z-index: -999; 
 }
 
 .block-screen-wrapper {
@@ -39,31 +45,37 @@
     box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     z-index: 2;
+
     @include mobile {
         width: 90%;
         top: 467px;
         height: 205px;
     }
+
     @include tablet {
         top: 90%;
         width: 90%;
         height: 505.16px;
     }
+
     @include desktop {
         top: 90%;
         width: 90%;
         height: 505.16px;
     }
+
     @include widescreen {
         top: 800px;
         width: 90%;
         height: 576.16px;
     }
+
     @include fullhd {
         top: 800px;
         width: 80%;
         height: 672.16px;
     }
+
     &__screen {
         background: url(../img/Service_Page.png);
         background-size: cover;
@@ -71,23 +83,28 @@
         height: 648px;
         margin: auto;
         margin-top: 24px;
+
         @include mobile {
             width: 98%;
             height: 194px;
             margin-top: 10px;
         }
+
         @include tablet {
             width: 98%;
             height: 480px;
         }
+
         @include desktop {
             width: 98%;
             height: 480px;
         }
+
         @include widescreen {
             width: 90%;
             height: 551px;
         }
+
         @include fullhd {
             width: 100%;
             height: 648px;
@@ -105,31 +122,37 @@
     right: 0;
     top: 416px;
     z-index: 1;
+
     @include mobile {
         top: 110px;
         width: 89%;
         height: 300px;
     }
+
     @include tablet {
         top: 405px;
         width: 475px;
         height: 217px;
     }
+
     @include desktop {
         top: 405px;
         width: 475px;
         height: 217px;
     }
+
     @include widescreen {
         top: 417px;
         width: 475px;
         height: 217px;
     }
+
     @include fullhd {
         top: 513px;
         width: 475px;
         height: 217px;
     }
+
     .block-tip {
         position: absolute;
         left: 0%;
@@ -138,35 +161,24 @@
         bottom: 0%;
         background: #DDF4E9;
         border-radius: 5px;
+
         p {
             font-family: $font-family-overpass;
             line-height: 24px;
             font-size: 14px;
             letter-spacing: 0.02em;
         }
+
         p:first-child {
             margin-bottom: 15px;
         }
+
         p:last-child {
             margin-top: 15px;
         }
+
         &__text {
             padding: 33px 28px 41px 25px;
-            // @include mobile {
-            //     padding: 10px 28px 41px 25px;
-            // }
-            // @include tablet {
-            //     padding: 33px 28px 41px 25px;
-            // }
-            // @include desktop {
-            //     padding: 33px 28px 41px 25px;
-            // }
-            // @include widescreen {
-            //     padding: 33px 28px 41px 25px;
-            // }
-            // @include fullhd {
-            //     padding: 33px 28px 41px 25px;
-            // }
         }
     }
 }
@@ -175,21 +187,27 @@
     margin-top: 703px;
     margin-bottom: 17px;
     text-align: center;
+
     @include mobile {
         margin-top: 143px;
     }
+
     @include tablet {
         margin-top: 438px;
     }
+
     @include desktop {
         margin-top: 438px;
     }
+
     @include widescreen {
         margin-top: 454px;
     }
+
     @include fullhd {
         margin-top: 545px;
     }
+
     .main-button {
         font-family: $font-family-overpass;
         font-weight: 900;
@@ -204,6 +222,7 @@
         color: $color-white;
         display: inline-block;
         padding: 21px 34px 14px 34px;
+
         @include mobile {
             font-size: 16px;
             padding: 11px 17px 11px 17px;
@@ -212,10 +231,12 @@
 }
 
 .section-feature {
-    background-color:#EBEFF5;
+    background-color: #EBEFF5;
+
     @include mobile {
         padding: 1rem 1.5rem;
     }
+
     .container-fluid {
         .columns {
             text-align: center;

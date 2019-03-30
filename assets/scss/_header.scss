@@ -1,6 +1,7 @@
 .section.header {
     height: 900px;
     padding: 1rem 1.5rem;
+
     @include mobile {
         height: 500px;
         padding: 2em 1.5em;
@@ -20,10 +21,12 @@
         background-position: 50% 25%;
         z-index: -1;
         height: 1000px;
+
         @include mobile {
             height: 500px;
             background-position: 67% 66%;
         }
+
         &:before {
             content: '';
             position: absolute;
@@ -40,22 +43,27 @@
 
 .header {
     z-index: 1;
+
     .header-logo {
         font-size: 36px;
         font-family: $font-family-overpass;
         font-weight: 400;
         color: #A4E4FF;
+
         @include mobile {
             font-size: 26px;
         }
+
         span {
             font-weight: 800;
         }
     }
+
     .subtitle {
         color: $color-white;
         font-family: $font-family-roboto;
         font-size: 20px;
+
         @include mobile {
             font-size: 14px;
         }
@@ -85,108 +93,87 @@ a.navbar-item:last-child:hover {
 .navbar-item {
     color: $color-white;
     margin-right: 59px;
+
     @include mobile {
         padding: 0;
         margin-right: 0;
         font-size: 1em;
     }
+
     @include tablet {
         margin-right: 0;
     }
+
     @include desktop {
         margin-right: 0;
     }
+
     @include widescreen {
         margin-right: 59px;
     }
+
     @include fullhd {
         margin-right: 59px;
     }
 }
 
-.navbar-item:last-child {
-    background: #27AE60;
-    border-radius: 3px;
-    padding: 9px 13px 9px 13px;
-    margin-right: 0;
-    a {
-        color: $color-white
-    }
-}
-
-.lk-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar-brand {}
-
-// .nav {
-//     font-family: $font-family-roboto;
-//     font-style: normal;
-//     font-weight: 500;
-//     line-height: normal;
-//     font-size: 14px;
-//     letter-spacing: 0.1em;
-//     .nav-item {
-//         text-align: center;
-//         color: $color-white;
-//         padding-left: 0.1rem;
-//         padding-right: 0.1rem;
-//     }
-//     .nav-item:last-child {
-//         background: #27AE60;
-//         border-radius: 3px;
-//         a {
-//             color: $color-white
-//         }
-//     }
-// }
 .header-text {
     position: relative;
     top: 243px;
     font-family: $font-family-overpass;
     color: $color-white;
+
     @include mobile {
         top: 40px;
     }
+
     @include tablet {
         top: 150px;
     }
+
     @include desktop {
         top: 200px;
     }
+
     @include widescreen {
         top: 220px;
     }
+
     @include fullhd {
         top: 240px;
     }
+
     &__title {
         font-weight: normal;
         font-size: 20px;
+
         @include mobile {
             font-size: 18px;
         }
     }
+
     &__subtitle {
         font-weight: bold;
         line-height: 52px;
         font-size: 36px;
+
         @include mobile {
             font-size: 24px;
             line-height: 30px;
         }
+
         @include tablet {
             font-size: 36px;
         }
+
         @include desktop {
             font-size: 36px;
         }
+
         @include widescreen {
             font-size: 36px;
         }
+
         @include fullhd {
             font-size: 36px;
         }
@@ -198,15 +185,19 @@ a.navbar-item:last-child:hover {
         width: 81.3333% !important;
         margin-top: 14px;
     }
+
     @include tablet {
         width: 47.3333% !important;
     }
+
     @include desktop {
         width: 33.3333% !important;
     }
+
     @include widescreen {
         width: 33.3333% !important;
     }
+
     @include fullhd {
         width: 33.3333% !important;
     }
@@ -223,24 +214,133 @@ a.navbar-item:last-child:hover {
     @include tablet {
         margin-left: -0.75rem;
     }
+
     @include desktop {
         margin-left: 2.25rem;
     }
+
     @include widescreen {
         margin-left: -0.75rem;
     }
+
     @include fullhd {
         margin-left: -6.75rem;
     }
 }
 
-.navbar-menu {
+.navbar-burger {
+    height: 3.5rem;
+    z-index: 999;
+
     @include mobile {
-        background: transparent;
-        text-align: center
+        height: 2rem;
     }
+}
+
+.navbar-menu.is-active {
+
+    @include mobile {
+        position: fixed;
+        width: 100vw;
+        left: 0;
+        bottom: 0;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+        height: 100vh;
+        z-index: 100;
+        overflow-y: auto;
+        background-color: white;
+    }
+
     @include tablet {
-        background: transparent;
-        text-align: center;
+        position: fixed;
+        width: 100vw;
+        left: 0;
+        bottom: 0;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+        height: 100vh;
+        z-index: 100;
+        overflow-y: auto;
+        background-color: white;
+    }
+
+    @include desktop {
+        display: block;
+    }
+
+    @include widescreen {
+        display: block;
+    }
+
+    @include fullhd {
+        display: block;
+    }
+
+}
+
+.navbar-end {
+    @include mobile {
+        margin-top: 50%;
+    }
+
+    @include tablet {
+        margin-top: 50%;
+    }
+
+    @include desktop {
+        margin-top: 0
+    }
+
+    .navbar-item {
+        @include mobile {
+            padding: 1em;
+            text-align: center;
+            color: #4a4a4a;
+        }
+
+        @include tablet {
+            text-align: center;
+            color: #4a4a4a;
+        }
+
+        @include desktop {
+            color: #FFFFFF;
+        }
+
+        &:hover {
+            @include mobile {
+                color: #5a5a5a;
+            }
+
+            @include tablet {
+                color: #5a5a5a;
+            }
+        }
+    }
+
+    .lk-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+
+        .navbar-item {
+            background: #27AE60;
+            border-radius: 3px;
+            padding: 9px 13px 9px 13px;
+            margin-right: 0;
+
+            @include mobile {
+                padding: 1em;
+                text-align: center;
+                color: #FFFFFF;
+            }
+
+            @include tablet {
+                ;
+                color: #FFFFFF;
+            }
+        }
     }
 }
